@@ -47,3 +47,5 @@ target/
 .nfs*
 
 # End of https://www.gitignore.io/api/java,linux,java-web
+
+.idea

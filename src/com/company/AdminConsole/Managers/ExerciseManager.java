@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class ExerciseManager {
 
-    ExerciseDao exerciseDao = new ExerciseDao();
+    private ExerciseDao exerciseDao = new ExerciseDao();
 
     public void exerciseManagerMenu() {
         System.out.println("This is exercise manager");

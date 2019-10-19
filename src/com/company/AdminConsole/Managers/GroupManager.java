@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class GroupManager {
 
-    GroupDao groupDao = new GroupDao();
+    private GroupDao groupDao = new GroupDao();
 
     public void groupManagerMenu() {
         System.out.println("This is group manager");

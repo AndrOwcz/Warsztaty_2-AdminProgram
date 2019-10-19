@@ -13,9 +13,9 @@ import java.util.Scanner;
 
 public class SolutionManager {
 
-    SolutionDao solutionDao = new SolutionDao();
-    UserDao userDao = new UserDao();
-    ExerciseDao exerciseDao = new ExerciseDao();
+    private SolutionDao solutionDao = new SolutionDao();
+    private UserDao userDao = new UserDao();
+    private ExerciseDao exerciseDao = new ExerciseDao();
 
     public void solutionManagementMenu() {
         System.out.println("This is solution manager");

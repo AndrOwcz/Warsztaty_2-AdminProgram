@@ -10,8 +10,8 @@ import java.util.Scanner;
 
 public class UserManager {
 
-    UserDao userDao = new UserDao();
-    GroupDao groupDao = new GroupDao();
+    private UserDao userDao = new UserDao();
+    private GroupDao groupDao = new GroupDao();
 
     public void userManagementMenu() {
         System.out.println("This is user manager");
@@ -77,7 +77,6 @@ public class UserManager {
         User user = new User();
         try {
             user.setUserName(newUsername);
-            // TODO - UNIKATOWY EMAIL + obsluga wyjatkow
             user.setEmail(newEmail);
             user.setPassword(newPassword);
             user.setUser_group_id(newGroupId);
@@ -105,7 +104,6 @@ public class UserManager {
             System.out.println("Type new User group:");
             int newGroupId = scanner.nextInt();
             userToEdit.setUserName(newUsername);
-            // TODO - UNIKATOWY EMAIL
             userToEdit.setEmail(newEmail);
             userToEdit.setPassword(newPassword);
             userToEdit.setUser_group_id(newGroupId);

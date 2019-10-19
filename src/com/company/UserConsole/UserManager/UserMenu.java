@@ -11,14 +11,14 @@ import java.util.Scanner;
 
 public class UserMenu {
 
-    int userId;
+    private int userId;
 
     public UserMenu(int userId) {
         this.userId = userId;
     }
 
-    SolutionDao solutionDao = new SolutionDao();
-    ExerciseDao exerciseDao = new ExerciseDao();
+    private SolutionDao solutionDao = new SolutionDao();
+    private ExerciseDao exerciseDao = new ExerciseDao();
 
     public void userMenu() {
         System.out.println("This is user console");
@@ -47,7 +47,7 @@ public class UserMenu {
 
     private void view() {
         System.out.println("All user solutions:");
-        Solution[] solutionsTab = solutionDao.findAllByUserId(userId); //TODO DO przerobienia - user z maina
+        Solution[] solutionsTab = solutionDao.findAllByUserId(userId);
         for (Solution solution : solutionsTab) {
             System.out.println(solution);
         }

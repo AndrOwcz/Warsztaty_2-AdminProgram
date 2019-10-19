@@ -19,8 +19,6 @@ public class ExerciseDao {
     private static final String FIND_ALL_EXERCISES_QUERY =
             "SELECT * FROM exercise";
 
-    // STATEMENT STATEMENT - NULL;
-
     public Exercise create(Exercise exercise) {
         try (Connection conn = DBUtil.getConnection()) {
             PreparedStatement statement =
@@ -36,8 +34,6 @@ public class ExerciseDao {
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
-//        } finally {
-//            STATEMENT.CLOSE();
         }
     }
 

@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class MainManager {
 
-    UserManager userManager = new UserManager();
-    GroupManager groupManager = new GroupManager();
-    SolutionManager solutionManager = new SolutionManager();
-    ExerciseManager exerciseManager = new ExerciseManager();
+    private UserManager userManager = new UserManager();
+    private GroupManager groupManager = new GroupManager();
+    private SolutionManager solutionManager = new SolutionManager();
+    private ExerciseManager exerciseManager = new ExerciseManager();
 
     public void mainManagerMenu() {
         System.out.println("This is main manager.");
